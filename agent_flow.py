@@ -25,9 +25,6 @@ graph.set_finish_point("answer_drafter")
 compiled_graph = graph.compile()
 print("21",compiled_graph)
 
-# # Define how the information flows
-# graph.add_edge("researcher", "answer_drafter")
-
 # Run the process
 def run_agents(query):
     result = compiled_graph.invoke({"query": query, "context": "", "answer": ""})
